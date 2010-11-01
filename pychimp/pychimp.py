@@ -1769,7 +1769,7 @@ class PyChimp(object):
         
         request = urllib2.Request("%(scheme)s://%(url)s?%(query)s&method=%(method)s" % {
             'scheme': "https" if self.secure else "http",
-            'url': '%s%s' % (self.apiUrl.netloc, self.apiUrl.path),
+            'url': '%s%s' % (host, self.apiUrl.path),
             'query': self.apiUrl.query,
             'method': method}, params, {"User-Agent": "PyChimp/%s" % __version__})
             
