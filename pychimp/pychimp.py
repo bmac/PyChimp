@@ -372,7 +372,7 @@ class PyChimp(object):
         return self.callServer("campaignDelete", params)
 
 
-    def campaigns(filters={}, start=0, limit=25):
+    def campaigns(self, filters={}, start=0, limit=25):
         '''
         Get the list of campaigns and their details matching the specified filters
     
